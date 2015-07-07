@@ -11,8 +11,74 @@
   <!-- endbuild -->
 </head>
 <body>
-  <h1>testdfsfsd</h1>
-
+  <header class="nav">
+    <div id="top-bar">
+      <a href="#top"><img id="top-img" src="./images/yuedayu.jpg" /></a>
+      <span class="bar-title">Yue Dayu</span>
+    </div>
+    <div id="menu-top"><img src="./images/menu.png"/></div>
+    <ul id="menu">
+      <li><a href="javascript:moveTo('about')">关于</a></li>
+      <li><a href="javascript:moveTo('work')">作业</a></li>
+      <li><a href="javascript:moveTo('post')">日志</a></li>
+      <li><a href="http://yuedayu.github.io/" target="view_window">博客</a></li>
+    </ul>
+  </header>
+  <div id="top"></div>
+  <div class="container">
+    <div id="about" class="center section-about section">
+      <div class="title">关于</div>
+      <img src="./images/yuedayu.jpg" class="photo"/>
+      <p class="name">岳大禹</p>
+      <p class="name">Yue Dayu</p>
+      <p>清华大学软件学院三字班</p>
+      <p>喜欢写代码以及做一些有趣的事情</p>
+      <div class="icon-group">
+        <a href="https://github.com/YueDayu" target="view_window"><img class="icon" src="./images/github.png"/></a>
+        <a href="mailto:yuedayu13@gmail.com" target="view_window"><img class="icon" src="./images/mail.png"/></a>
+      </div>
+      <br/>
+      <br/>
+      <br/>
+          <!-- <hr width=80% size=3 color=#5151A2 style="filter:progid:DXImageTransform.Microsoft.Glow(color=#5151A2,strength=10)"> -->
+    </div>
+    <div id="work" class="center section-work section">
+      <div class="title">作业</div>
+      <div class="section-content">
+        <a href="http://yuedayu.github.io/webpage" target="view_window">
+          <div class="panel">
+            <img src="./images/homework1.jpg"/>
+            <hr/>
+            <p>
+              第一次作业
+            </p>
+          </div>
+        </a>
+      </div>
+      <br/>
+      <br/>
+      <br/>
+          <!-- <hr width=80% size=3 color=#5151A2 style="filter:progid:DXImageTransform.Microsoft.Glow(color=#5151A2,strength=10)"> -->
+    </div>
+    <div id="post" class="center section-post section">
+      <div class="title">日志</div>
+      <div class="section-content">
+        <a href="http://yuedayu.github.io/webpage" target="view_window">
+          <div class="panel">
+            <img src="./images/cat.gif"/>
+            <hr/>
+            <p>
+              当我写这个作业的时候我在想什么
+            </p>
+          </div>
+        </a>
+      </div>
+      <br/>
+      <br/>
+      <br/>
+          <!-- <hr width=80% size=3 color=#5151A2 style="filter:progid:DXImageTransform.Microsoft.Glow(color=#5151A2,strength=10)"> -->
+    </div>
+  </div>
 <!-- build:js({app,.tmp}) scripts/main.js -->
 <script src="scripts/main.js"></script>
 <!-- endbuild -->
