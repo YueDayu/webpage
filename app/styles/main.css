@@ -4,6 +4,16 @@ html, body {
   font-family: "Roboto", "Microsoft YaHei", "黑体", "宋体", sans-serif;
 }
 
+.footer {
+  text-align: center;
+  border-top: none;
+  background-color: #FADBD9;
+  color: #909090;
+  font-size: 0.5em;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
 #top {
   margin-top: 0;
   height: 50px;
@@ -153,6 +163,9 @@ html, body {
   .big-panel img {
     margin-top: 10px;
     width: 90%;
+  }
+  .big-panel h3 {
+    padding-top: 30px;
   }
   .text-area {
     width: 90%;
