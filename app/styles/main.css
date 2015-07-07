@@ -113,14 +113,22 @@ html, body {
   margin-right: 10px;
   margin-top: 10px;
   margin-bottom: 10px;
+}
+
+.small-panel {
+  width: 30%;
   transition: box-shadow 0.28s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.panel:hover {
+.big-panel {
+  width: 90%;
+}
+
+.small-panel:hover {
   box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2), 0 3px 6px rgba(0, 0, 0, 0.28);
 }
 
-.panel img {
+.small-panel img {
   margin-top: 10px;
   width: 90%;
 }
@@ -135,7 +143,22 @@ html, body {
   margin-left: 5%;
 }
 
+.text-area {
+  width: 80%;
+  margin-left: 10%;
+  text-align: left;
+}
+
 @media screen and (max-width: 600px) {
+  .big-panel img {
+    margin-top: 10px;
+    width: 90%;
+  }
+  .text-area {
+    width: 90%;
+    margin-left: 5%;
+    text-align: left;
+  }
   .section-content {
     margin: 0;
   }

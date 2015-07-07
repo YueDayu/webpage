@@ -1,5 +1,3 @@
-console.log(document.body.clientWidth);
-
 function hasClassName(inElement, inClassName)
 {
   var regExp = new RegExp('(?:^|\\s+)' + inClassName + '(?:\\s+|$)');
@@ -30,16 +28,19 @@ function moveTo(id) {
   }
 }
 
-if (document.body.clientWidth <= 600) {
-  var list = document.getElementById('menu');
-  addClassName(list, 'hidden');
-  document.getElementById('menu-top').onclick = function () {
-    if (hasClassName(list, 'hidden')) {
-      removeClassName(list, 'hidden');
-    } else {
-      addClassName(list, 'hidden');
+window.onload = function() {
+  if (document.body.clientWidth <= 600) {
+    removeClassName(document.getElementById('menu-top'), 'hidden');
+    var list = document.getElementById('menu');
+    addClassName(list, 'hidden');
+    document.getElementById('menu-top').onclick = function () {
+      if (hasClassName(list, 'hidden')) {
+        removeClassName(list, 'hidden');
+      } else {
+        addClassName(list, 'hidden');
+      }
     }
+  } else {
+    removeClassName(document.getElementById('menu'), 'hidden');
   }
-} else {
-  addClassName(document.getElementById('menu-top'), 'hidden');
 }
